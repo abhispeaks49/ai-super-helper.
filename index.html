@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Super Helper 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Home Screen -->
+        <section id="home" class="screen active">
+            <header>
+                <h1>🤖 AI Super Helper 2026</h1>
+                <p>Your All-in-One AI Assistant</p>
+            </header>
+
+            <div class="cards-container">
+                <div class="card" data-section="chat">
+                    <div class="card-icon">💬</div>
+                    <h3>AI Chat Assistant</h3>
+                    <p>Chat with AI instantly</p>
+                </div>
+
+                <div class="card" data-section="resume">
+                    <div class="card-icon">📄</div>
+                    <h3>Resume Builder</h3>
+                    <p>Create professional resumes</p>
+                </div>
+
+                <div class="card" data-section="instagram">
+                    <div class="card-icon">📸</div>
+                    <h3>Caption Generator</h3>
+                    <p>Instagram captions in seconds</p>
+                </div>
+
+                <div class="card" data-section="homework">
+                    <div class="card-icon">📚</div>
+                    <h3>Homework Helper</h3>
+                    <p>Get quick answers</p>
+                </div>
+
+                <div class="card" data-section="business">
+                    <div class="card-icon">💼</div>
+                    <h3>Business Name Generator</h3>
+                    <p>Creative business names</p>
+                </div>
+
+                <div class="card" data-section="farming">
+                    <div class="card-icon">🌾</div>
+                    <h3>Farming Tips</h3>
+                    <p>Expert agricultural advice</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Chat Assistant -->
+        <section id="chat" class="screen">
+            <header>
+                <button class="back-btn">← Back</button>
+                <h2>AI Chat Assistant</h2>
+            </header>
+
+            <div class="chat-container">
+                <div id="chatMessages" class="chat-messages">
+                    <div class="message ai-message">
+                        <strong>AI:</strong> Hello! How can I help you today?
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Type your message..." />
+                    <button id="chatSend">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Builder -->
+        <section id="resume" class="screen">
+            <header>
+                <button class="back-btn">← Back</button>
+                <h2>Resume Builder</h2>
+            </header>
+
+            <div class="content-container">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="resumeName" placeholder="Enter your name" />
+                </div>
+
+                <div class="form-group">
+                    <label>Skills (comma separated)</label>
+                    <input type="text" id="resumeSkills" placeholder="e.g. JavaScript, Python, Design" />
+                </div>
+
+                <div class="form-group">
+                    <label>Education</label>
+                    <textarea id="resumeEducation" placeholder="e.g. B.Tech Computer Science, XYZ University"></textarea>
+                </div>
+
+                <button class="action-btn" id="generateResume">Generate Resume</button>
+
+                <div id="resumeOutput" class="output-box"></div>
+            </div>
+        </section>
+
+        <!-- Instagram Caption Generator -->
+        <section id="instagram" class="screen">
+            <header>
+                <button class="back-btn">← Back</button>
+                <h2>Instagram Caption Generator</h2>
+            </header>
+
+            <div class="content-container">
+                <div class="form-group">
+                    <label>Topic</label>
+                    <input type="text" id="captionTopic" placeholder="e.g. sunset, coffee, travel" />
+                </div>
+
+                <button class="action-btn" id="generateCaptions">Generate Captions</button>
+
+                <div id="captionOutput" class="output-box"></div>
+            </div>
+        </section>
+
+        <!-- Homework Helper -->
+        <section id="homework" class="screen">
+            <header>
+                <button class="back-btn">← Back</button>
+                <h2>Homework Helper</h2>
+            </header>
+
+            <div class="content-container">
+                <div class="form-group">
+                    <label>Your Question</label>
+                    <textarea id="homeworkQuestion" placeholder="Enter your homework question..."></textarea>
+                </div>
+
+                <button class="action-btn" id="solveHomework">Get Answer</button>
+
+                <div id="homeworkOutput" class="output-box"></div>
+            </div>
+        </section>
+
+        <!-- Business Name Generator -->
+        <section id="business" class="screen">
+            <header>
+                <button class="back-btn">← Back</button>
+                <h2>Business Name Generator</h2>
+            </header>
+
+            <div class="content-container">
+                <div class="form-group">
+                    <label>Business Type</label>
+                    <input type="text" id="businessType" placeholder="e.g. coffee shop, tech startup" />
+                </div>
+
+                <button class="action-btn" id="generateBusinessNames">Generate Names</button>
+
+                <div id="businessOutput" class="output-box"></div>
+            </div>
+        </section>
+
+        <!-- Farming Tips -->
+        <section id="farming" class="screen">
+            <header>
+                <button class="back-btn">← Back</button>
+                <h2>Farming Tips</h2>
+            </header>
+
+            <div class="content-container">
+                <div class="form-group">
+                    <label>Crop Name</label>
+                    <input type="text" id="cropName" placeholder="e.g. wheat, tomato, rice" />
+                </div>
+
+                <button class="action-btn" id="getFarmingTips">Get Tips</button>
+
+                <div id="farmingOutput" class="output-box"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Ad Banner -->
+    <div class="ad-banner">
+        📢 Ad Space - Monetization Demo
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
